@@ -1,0 +1,10 @@
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\bin\Debug\DinnerPartys.exe.config
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\bin\Debug\DinnerPartys.exe
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\bin\Debug\DinnerPartys.pdb
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.csprojAssemblyReference.cache
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.Form1.resources
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.Properties.Resources.resources
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.csproj.GenerateResource.cache
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.csproj.CoreCompileInputs.cache
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.exe
+C:\Users\Furkan-Ozbek\source\repos\DinnerPartys\DinnerPartys\obj\Debug\DinnerPartys.pdb
