@@ -37,13 +37,13 @@
             this.Birthday_Tab = new System.Windows.Forms.TabControl();
             this.DinnerTab = new System.Windows.Forms.TabPage();
             this.BirthdayTab = new System.Windows.Forms.TabPage();
+            this.birthText_Label = new System.Windows.Forms.Label();
             this.birth_text = new System.Windows.Forms.TextBox();
             this.costB_label = new System.Windows.Forms.Label();
             this.fancy_CheckB = new System.Windows.Forms.CheckBox();
             this.costResult_label = new System.Windows.Forms.Label();
             this.numberB_label = new System.Windows.Forms.Label();
             this.numB_numeric = new System.Windows.Forms.NumericUpDown();
-            this.birthText_Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.Birthday_Tab.SuspendLayout();
             this.DinnerTab.SuspendLayout();
@@ -166,6 +166,15 @@
             this.BirthdayTab.Text = "Birthday Party";
             this.BirthdayTab.UseVisualStyleBackColor = true;
             // 
+            // birthText_Label
+            // 
+            this.birthText_Label.AutoSize = true;
+            this.birthText_Label.Location = new System.Drawing.Point(53, 133);
+            this.birthText_Label.Name = "birthText_Label";
+            this.birthText_Label.Size = new System.Drawing.Size(65, 13);
+            this.birthText_Label.TabIndex = 14;
+            this.birthText_Label.Text = "CakeWriting";
+            // 
             // birth_text
             // 
             this.birth_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -181,7 +190,7 @@
             // 
             this.costB_label.AutoSize = true;
             this.costB_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.costB_label.Location = new System.Drawing.Point(63, 171);
+            this.costB_label.Location = new System.Drawing.Point(53, 177);
             this.costB_label.Name = "costB_label";
             this.costB_label.Size = new System.Drawing.Size(40, 17);
             this.costB_label.TabIndex = 11;
@@ -201,6 +210,7 @@
             // costResult_label
             // 
             this.costResult_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.costResult_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.costResult_label.Location = new System.Drawing.Point(144, 171);
             this.costResult_label.Name = "costResult_label";
             this.costResult_label.Size = new System.Drawing.Size(100, 23);
@@ -233,15 +243,6 @@
             0});
             this.numB_numeric.ValueChanged += new System.EventHandler(this.numB_numeric_ValueChanged);
             this.numB_numeric.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enterPressed);
-            // 
-            // birthText_Label
-            // 
-            this.birthText_Label.AutoSize = true;
-            this.birthText_Label.Location = new System.Drawing.Point(53, 133);
-            this.birthText_Label.Name = "birthText_Label";
-            this.birthText_Label.Size = new System.Drawing.Size(65, 13);
-            this.birthText_Label.TabIndex = 14;
-            this.birthText_Label.Text = "CakeWriting";
             // 
             // Form1
             // 

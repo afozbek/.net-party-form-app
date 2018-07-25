@@ -6,30 +6,37 @@ using System.Threading.Tasks;
 
 namespace DinnerPartys
 {
-    class DinnerParty
+    class DinnerParty:Party
     {
         public const int CostOfFoodPerPerson = 25;
-        public decimal priceAll;
-        public bool healty;
+       
         
         public decimal CostOfBeveragesPerPerson;
-        public decimal CostOfDecorations;
-        private int numberOfpeople;
+        
+
+
+        
         public int NumberOfpeople {
-            get { return numberOfpeople; }
+            get
+            {
+                return base.NumberOfPeople;
+            }
             set {
-                numberOfpeople = value;
+                base.NumberOfPeople = value;
                 CalculateCostOfDecorations(fancyDecorations);
-
-
             }
         }
-        private bool fancyDecorations;
+
+
+
+       
         public DinnerParty(int numberOfPeople, bool healthyOption, bool fancyDecorations)
+            :base(numberOfPeople,fancyDecorations)
         {
-            NumberOfpeople = numberOfPeople;
+            base.NumberOfPeople = numberOfPeople;
             SetHealthyOption(healthyOption);
-            this.fancyDecorations = fancyDecorations;
+            CalculateCostOfDecorations(fancyDecorations);
+            
            
         }
             public void SetHealthyOption(bool isHealty)
@@ -43,29 +50,12 @@ namespace DinnerPartys
                 CostOfBeveragesPerPerson = 20.00M;
             }
         }
-        
 
-      
-
-
-        public void CalculateCostOfDecorations(bool isExpensive)
-        {
-            fancyDecorations = isExpensive;
-            if (isExpensive)
-            {
-                CostOfDecorations = (NumberOfpeople * 15.00M) + 50M;
-            }
-            else
-            {
-                CostOfDecorations = (NumberOfpeople * 7.50M) + 30M;
-            }
-        }
-
+        //OVERLOAD IT FROM BASE CLASS
         public decimal CalculateCost(bool isChecked)
         {
-            decimal totalCost = CostOfDecorations + 
-                ((CostOfBeveragesPerPerson +
-                CostOfFoodPerPerson) * NumberOfpeople);
+            decimal totalCost = base.CalculateCost() + 
+                (CostOfBeveragesPerPerson * NumberOfPeople);
 
             if (isChecked)
             {
@@ -76,7 +66,24 @@ namespace DinnerPartys
             {
                 return totalCost;
             }
-            
+
         }
+
+
+
+        //public override void CalculateCostOfDecorations(bool isExpensive)
+        //{
+        //    fancyDecorations = isExpensive;
+        //    if (isExpensive)
+        //    {
+        //        CostOfDecorations = (NumberOfpeople * 15.00M) + 50M;
+        //    }
+        //    else
+        //    {
+        //        CostOfDecorations = (NumberOfpeople * 7.50M) + 30M;
+        //    }
+        //}
+
+
     }
 }

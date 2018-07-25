@@ -24,7 +24,7 @@ namespace DinnerPartys
         {
             birth_text.Text = birthdayParty.CakeWriting;
             decimal cost = birthdayParty.CalculateCost();
-            costB_label.Text = cost.ToString("c");
+            costResult_label.Text = cost.ToString("c");
         }
         public Form1()
         {
